@@ -1,0 +1,425 @@
+session_config:
+  session_expiration_time: 0.0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- graph_ask
+- ask_exr
+- done_intent
+- quit_intent
+- show_daily_routine
+- show_yoga
+- show_cardio
+- show_health-specific
+- show_h1
+- show_h2
+- show_h3
+- show_h4
+- show_exr_pref
+- fine_normal
+- query_ask
+- recipe_ask
+- main_ing
+- calorie_intent
+- diet_intent
+- food_pref_intent
+- ask_news
+- ask_sms
+- ask_map
+- show_ip
+- symptom1
+- fine_ask
+- goodbye
+- mood_unhappy
+- bot_challenge
+- advice
+- thanks
+- are_you_sure
+- deny
+- affirm
+- reminder_general
+- reminder_show 
+- name-intent
+- positive
+- negative
+- exercise
+- pos
+- neg
+- handleinsult
+- out_of_scope
+- medicine_remind
+- ask_location
+- inform_location
+- ask_zip_code
+- exercise_type
+- remedy
+- personalize_healthcare
+
+
+
+entities:
+- exercise
+- yoga
+- body
+- time
+- date
+- medicine
+- zipCode
+- location
+- ask_remedy
+- name
+- gender
+- age
+- email
+- contact
+- emergencycont
+- preconditions
+- preexinfo
+- foodpreftype
+- diettype
+- calorietype
+- ing
+- reminder
+- location_type
+- hospitals
+- query_slot
+slots:
+  query_slot:
+    type: text
+  iterator:
+    type: text
+    initial_value: '-1'
+  ex_type_slot: 
+    type: text
+  iterator_c:
+    type: text
+    initial_value: '-1'
+  ex_type_slot_c: 
+    type: text
+  iterator_y:
+    type: text
+    initial_value: '-1'
+  ex_type_slot_y: 
+    type: text
+  ex_type_slot_h1: 
+    type: text
+  iterator_h1:
+    type: text
+    initial_value: '-1'
+  iterator_h2:
+    type: text
+    initial_value: '-1'
+  ex_type_slot_h2: 
+    type: text
+  iterator_h3:
+    type: text
+    initial_value: '-1'
+  ex_type_slot_h3: 
+    type: text
+  iterator_h4:
+    type: text
+    initial_value: '-1'
+  ex_type_slot_h4: 
+    type: text
+  ex_category:
+    type: text
+    initial_value: '0'
+  iterator_prs:
+    type: text
+    initial_value: '-1'
+
+  reminder:
+    type: unfeaturized
+    auto_fill: false
+
+  date_slot:
+    type: unfeaturized
+  entity_extractor:
+    type: categorical
+    values:
+    - crfentityextractor
+    - spacyentityextractor
+    - ducklinghttpextractor
+
+  location_type:
+    type: text
+  ing:
+    type: unfeaturized
+    auto_fill: false
+  calorietype:
+    type: unfeaturized
+    auto_fill: false  
+  diettype:
+    type: unfeaturized
+    auto_fill: false
+  foodpreftype:
+    type: unfeaturized
+    auto_fill: false 
+
+  medicine:
+    type: text
+  time_slot:
+    type: unfeaturized
+  zipCode:
+    type: text
+  location:
+    type: text
+  ask_remedy:
+    type: unfeaturized
+    
+
+  name:
+    type: unfeaturized
+    auto_fill: false
+  gender:
+    type: unfeaturized
+    auto_fill: false
+  age:
+    type: unfeaturized 
+    auto_fill: false
+  email:
+    type: unfeaturized
+    auto_fill: false 
+  contact:
+    type: unfeaturized
+    auto_fill: false
+  emergencycont:
+    type: unfeaturized
+    auto_fill: false
+  preconditions:
+    type: unfeaturized
+    auto_fill: false
+  preexinfo:
+    type: unfeaturized
+    auto_fill: false
+
+  
+
+
+templates:
+  utter_ask_exr_type:
+    - text: Choose your workout type !!
+      buttons:
+      - title: Daily Fitness Routine
+        payload: /show_daily_routine
+      - title: Cardio Workouts
+        payload: /show_cardio
+      - title: Yoga
+        payload: /show_yoga
+      - title: Heath-Specific
+        payload: /show_health-specific
+  utter_health_specific:
+    - text: Choose your Health Condition
+      buttons:
+      - title: Heart Disease
+        payload: /show_h1
+      - title: Asthma
+        payload: /show_h2
+      - title: Athritis
+        payload: /show_h3
+      - title: Elderly
+        payload: /show_h4
+  utter_new_exr:
+    - text: Could You perform🤔?
+      buttons:
+      - title: Done!
+        payload: /done_intent
+      - title: Quit
+        payload: /quit_intent
+  utter_quit:
+    - text: Hope you enjoyed the workout!!😀
+
+  utter_ask_ing:
+    - text: Type in your main ingredient(Eg-Egg,chicken,potato,..etc)
+    - text: please let me know the main ingredient(Eg-Egg,chicken,potato,..etc)
+    - text: what would you like the recipe on(Eg-Egg,chicken,potato,..etc)
+  utter_ask_calorietype:
+  - text: Select your calorie preferences?
+    buttons:
+    - title: 100-300
+      payload: /calorie_intent{"calorietype":"100-300"}
+    - title: 300-500
+      payload: /calorie_intent{"calorietype":"300-500"}
+    - title: More than 500
+      payload: /calorie_intent{"calorietype":"500-1200"}
+  utter_ask_diettype:
+  - text: Which diet would prefer
+    buttons:
+    - title: Balanced
+      payload: /diet_intent{"diettype":"balanced"}
+    - title: High-Protien
+      payload: /diet_intent{"diettype":"high-protien"}
+    - title: Low-Fat
+      payload: /diet_intent{"diettype":"low-fat"}   
+    - title: Low-Carb
+      payload: /diet_intent{"diettype":"low-carb"}
+
+  utter_ask_foodpreftype:
+  - text: Select your preferences?
+    buttons:
+    - title: Veg & Non-dairy
+      payload: /food_pref_intent{"foodpreftype":"vegan"}
+    - title: vegetarian
+      payload: /food_pref_intent{"foodpreftype":"vegetarian"}
+    - title: Sugar-Conscious
+      payload: /food_pref_intent{"foodpreftype":"sugar-conscious"}
+  
+  utter_recdisp:
+    - The following are the recipes which match your criteria.
+
+  
+
+
+  utter_default:
+  - text: I am not sure what you're aiming for. Please could you ask again?
+  - text: I am sorry but I am not able to get you. Please could you ask again?
+  - text: My apologies but I am not able to get you. Please could you ask again?
+  - text: Sorry, I did not understand you. Please could you ask again?
+  - text: I am still under development. Please could you ask again?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Talk to you later!
+  - text: Have a good day!
+  - text: Until next time!
+  - text: Bye, it was nice talking to you!
+  utter_greet:
+  - text: Hey! I'm Zara, your Healthcare companion!☺️ How are you?
+  - text: Hello, I'm Zara, your Healthcare companion!☺️ How are you doing?
+  - text: Hello, how can I help you?
+  utter_help:
+  - text: Great. How can I help you?
+  - text: Great. Tell me How can I help you?
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_reply:
+  - text: I'm doing great ☺. Please let me know what I can do for you.
+  - text: I'm doing great ☺️. Tell me How can I help you today?
+  utter_thank:
+  - text: Not a problem! Let me know if there is anything else I can help you with.☺️
+  - text: Glad you used my service! Let me know if there is anything else I can help
+      you with.☺️
+  utter_ready:
+  - text: Are you ready to proceed?
+    buttons:
+    - title: Yes
+      payload: /pos
+    - title: No
+      payload: /neg
+  
+
+  utter_greet_name:
+  - text: Nice name! I shall call you {name} from now.
+  - text: Hello {name}
+  utter_handleinsult:
+  - text: I'm a bot, please treat me nicely...😢
+  utter_outofscope:
+  - text: This is irrelevant to my context,😢 I'm sorry, I won't be able to help.
+  utter_ask_loc:
+  - text: Sure!!Please tell me your location
+  - text: Sure!Tell me the location where I need to search for
+  utter_okay:
+  - text: Okay!
+  - text: Alright!
+  - text: Fine!
+  utter_neg:
+  - text: Oh! How can I help?
+  utter_ask_info:
+  - text: Before we begin, I want to get some information about you and no need to worry at all. The data provided by you will remain confidential! I'm a health companion and this data, will help me to serve you better! If you are ready just type something like "I want personalized health care advices,etc", anytime...
+  - text: Before we begin, I'd like to ask you some questions and don't worry at all. The data provided by you will remain confidential! I'm a health companion and this data, will help me to serve you better! If you are ready just type something like "I want personalized health care advices,etc", anytime....
+  - text : I can help you personalize your daily health routine. If you want to recieve them, just ask something like "I want personalized health care advices,etc"....
+  utter_ask_name:
+    - What's your good name?
+  utter_ask_gender:
+    - What gender do you go by?
+  utter_ask_age:
+    - Please provide your age(in number) ?
+  utter_ask_email:
+    - Please can you provide your email id? This will help me to deliver your health reports via email.   
+  utter_ask_contact:
+    - What is your contact number?
+  utter_ask_emergencycont:
+    - please provide an emergency contact number for me to reach out to!
+  utter_ask_preconditions:
+    - Have you been diagonized for any illness before? This data will help me to personalize your healthcare..
+  utter_ask_preexinfo:
+    - And lastly, which type of exercise do you normally perform?(Eg- Cardio, Yoga, Daily, etc)
+  utter_thaninit:
+    - Thank you for providing all the info.
+  utter_thank1:
+  - text: Not a problem! Let me know if there is anything else I can help you with.
+
+
+actions:
+- utter_ask_exr_type
+- utter_quit
+- utter_health_specific
+- action_itr
+- action_itr_c
+- action_exr_c
+- action_itr_y
+- action_exr_y
+- action_itr_h1
+- action_exr_h1
+- action_itr_h2
+- action_exr_h2
+- action_itr_h3
+- action_exr_h3
+- action_itr_h4
+- action_exr_h4
+- utter_new_exr
+- utter_okay
+- utter_neg
+- action_exr2
+- action_graph
+- action_query
+- utter_ask_ing
+- utter_ask_foodpreftype
+- utter_ask_diettype
+- utter_ask_calorietype
+- utter_recdisp
+- action_recipe
+- action_news
+- action_map
+- action_SMS
+- action_ip
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_help
+- utter_iamabot
+- utter_reply
+- utter_thank
+- action_Get_Reminder
+- action_Set_Reminder
+- utter_handleinsult
+- utter_outofscope
+- action_store_entity_extractor
+- action_split_date_time
+- action_loc_csv
+- action_zip_code
+- utter_ask_loc
+- utter_default
+- action_remedy_csv
+- utter_ask_info
+- utter_ready
+- utter_ask_name
+- utter_ask_gender
+- utter_ask_age
+- utter_ask_email
+- utter_ask_contact
+- utter_ask_emergencycont
+- utter_ask_preconditions
+- utter_ask_preexinfo
+- utter_thaninit
+- action_add_Reminder
+- action_show_Reminder
+- action_reset_all_slots
+- utter_ask_reminder
+- utter_thank1
+
+
+forms:
+- information_form
+- recipe_form
+- reminder_form

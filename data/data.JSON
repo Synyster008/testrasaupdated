@@ -1,0 +1,302 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good afternoon",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hii",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "I am good, how are you doing?",
+        "intent": "fine_ask",
+        "entities": []
+      },
+      {
+        "text": "I'm fine, how are you?",
+        "intent": "fine_ask",
+        "entities": []
+      },
+      {
+        "text": "I'm good, how are you?",
+        "intent": "fine_ask",
+        "entities": []
+      },
+      {
+        "text": "I am good, how are you?",
+        "intent": "fine_ask",
+        "entities": []
+      },
+      {
+        "text": "Doing good, how are you?",
+        "intent": "fine_ask",
+        "entities": []
+      },
+      {
+        "text": "Awesome, how are you?",
+        "intent": "fine_ask",
+        "entities": []
+      },
+      {
+        "text": "im fine, how are you?",
+        "intent": "fine_ask",
+        "entities": []
+      },
+      {
+        "text": "im good, how are you?",
+        "intent": "fine_ask",
+        "entities": []
+      },
+      {
+        "text": "I am doing good. How about you?",
+        "intent": "fine_ask",
+        "entities": []
+      },
+      {
+        "text": "I am doing great",
+        "intent": "fine_normal",
+        "entities": []
+      },
+      {
+        "text": "I'm doing great",
+        "intent": "fine_normal",
+        "entities": []
+      },
+      {
+        "text": "I'm fine",
+        "intent": "fine_normal",
+        "entities": []
+      },
+      {
+        "text": "I'm good",
+        "intent": "fine_normal",
+        "entities": []
+      },
+      {
+        "text": "Doing good",
+        "intent": "fine_normal",
+        "entities": []
+      },
+      {
+        "text": "Awesome",
+        "intent": "fine_normal",
+        "entities": []
+      },
+      {
+        "text": "im fine",
+        "intent": "fine_normal",
+        "entities": []
+      },
+      {
+        "text": "im good",
+        "intent": "fine_normal",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "see ya",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "see you later",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "Yes",
+        "intent": "Yes",
+        "entities": []
+      },
+      {
+        "text": "of course",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that sounds good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "No",
+        "intent": "No",
+        "entities": []
+      },
+      {
+        "text": "never",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "I don't think so",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "don't like that",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "no way",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "not really",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "sad",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+      {
+        "text": "very sad",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+      {
+        "text": "unhappy",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+      {
+        "text": "bad",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+      {
+        "text": "not very good",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+      {
+        "text": "terrible",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+      {
+        "text": "are you a bot?",
+        "intent": "bot_challenge",
+        "entities": []
+      },
+      {
+        "text": "are you a human?",
+        "intent": "bot_challenge",
+        "entities": []
+      },
+      {
+        "text": "am I talking to a bot?",
+        "intent": "bot_challenge",
+        "entities": []
+      },
+      {
+        "text": "am I talking to a human?",
+        "intent": "bot_challenge",
+        "entities": []
+      },
+      {
+        "text": "can you suggest some yoga poses?",
+        "intent": "exercise_per",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "yoga",
+            "entity": "exercise"
+          }
+        ]
+      },
+      {
+        "text": "Can you recommend some body exercises?",
+        "intent": "exercise_per",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "body",
+            "entity": "exercise"
+          }
+        ]
+      }
+
+
+    ]
+  }
+}
