@@ -509,10 +509,10 @@
 - can you remind me to take medicine [at 15:59](time:2020-01-30T15:59:00.000+00:00)?
 - remind me to take medicine [at 11:45](time:2020-02-03T11:45:00.000+00:00)
 - I need you to remind me to take [lora](medicine:lora) [at 11:45](time:2020-02-03T11:45:00.000+00:00)
-- remind me to take [dcold](medicine:dcold)[at 15:59](time:2020-01-30T15:59:00.000+00:00)
-- I need to take [panadol](medicine:panadol)[at 15:59](time:2020-01-30T15:59:00.000+00:00)
-- I have to take [panadol](medicine:panadol)[at 15:59](time:2020-01-30T15:59:00.000+00:00). can you remind me?
-- Please remind me to take [disprin](medicine:disprin)[at 15:59](time:2020-01-30T15:59:00.000+00:00)
+- remind me to take [dcold](medicine:dcold) [at 15:59](time:2020-01-30T15:59:00.000+00:00)
+- I need to take [panadol](medicine:panadol) [at 15:59](time:2020-01-30T15:59:00.000+00:00)
+- I have to take [panadol](medicine:panadol) [at 15:59](time:2020-01-30T15:59:00.000+00:00). can you remind me?
+- Please remind me to take [disprin](medicine:disprin) [at 15:59](time:2020-01-30T15:59:00.000+00:00)
 
 
 
