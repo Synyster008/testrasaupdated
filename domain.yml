@@ -284,8 +284,8 @@ templates:
   - text: Until next time!
   - text: Bye, it was nice talking to you!
   utter_greet:
-  - text: Hey! I'm Zara, your Healthcare companion!☺️ How are you?
-  - text: Hello, I'm Zara, your Healthcare companion!☺️ How are you doing?
+  - text: Hey! I'm Max, your Healthcare companion!☺️ How are you?
+  - text: Hello, I'm Max, your Healthcare companion!☺️ How are you doing?
   - text: Hello, how can I help you?
   utter_help:
   - text: Great. How can I help you?
