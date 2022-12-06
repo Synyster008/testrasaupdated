@@ -10,43 +10,93 @@
 - hi again
 - Hi
 - HI
-- hi bot
+- hi bot    
 - hey bot!
 - hi bot!
 - 👋
-- hi zara!
-- zara
+- hi max!
+- max
 - hi is anybody there
 - dude
 - bot
 - hii
-- okay zara
-- ok zara
+- okay max
+- ok max
 - ok dude
+
+
+## intent:reminder_general
+- [I have an appointment with a doctor.](reminder)Can you add it in the reminder list?
+- [I need to go for workouts at 8 .](reminder)please can you add it as a reminder? 
+- Add my task of meeting the physiotherapist in my reminder list.
+- [I have to go to the gym @ 6pm today.](reminder)Add it in my reminder.
+- Please can you add my reminder of my today's appointment with the doctor?
+- Add my reminder of meeting the physiotherapist today.
+
+
+## intent:reminder_show
+- can you show my reminder list?
+- what are my reminders that i set for today?
+- What all tasks did I ask you to remind me today?
+- show my reminder list.
+- show my tasks for today?
+## intent: send_mail
+- Send me an mail max
+- Send the mail max
+
 
 ## intent:graph_ask
 - show the graph
 - display the graph
 
 
+## intent:recipe_ask
+- Could you show some recipes?
+- show some recipes
+- Show some recipes
+- show me some healthy recipes
+- Tell me any good recipes
+- can you show some recipes?
+
+## intent:main_ing
+- [egg](ing)
+- [chicken](ing)
+- [potato](ing)
+- [rice](ing)
+- [paneer](ing)
 
 ## intent:show_daily_routine
 - show daily routine exercise
 - display daily routine exercise
 - daily routine exercise
 
+## intent:show_exr_pref
+- show exercises personalised for me
+- personalised exercises for me
+
+
+## intent:show_health-specific
+- show health-specific exercise
+- display health-specific exercise
+- health-specific exercise
+
+## intent:show_h1
+- show exercises for heart dieases
+- Heart diease exercises
+## intent:show_h2
+- show exercises for asthma
+- asthma exercises
+## intent:show_h3
+- show exercises for athritis
+- athritis exercises
+## intent:show_h4
+- show exercises for Elderly
+- Elderly exercises
 
 ## intent:ask_exr
 - Show some exercises
 - I would like to workout
 - Recommend some workouts
-- can you suggest some exercise?
-- tell me some exercise?
-- can you tell me some exercise?
-- I want some exercises.
-- I need some exercises.
-- show me some exercises.
-
 
 ## intent:show_yoga
 - show yoga exercise
@@ -69,51 +119,6 @@
 - this is done intent
 - done intent
 
-
-## intent:query_ask
-- [Book an appointment with a dentist](query_slot)
-- [Dentists available in koramangala](query_slot)
-- [General Physicians avaliable today](query_slot)
-- [Book a dermatologist in Yelahanka](query_slot)
-- [order dolo tablets](query_slot)
-- [order crocin tablets](query_slot)
-- [order sanitizers](query_slot)
-- [What is the fees for diabetes test](query_slot)
-- [Fees for thyroid test](query_slot)
-- [Fees for complete body checkup](query_slot)
-- [Book appointments in columbia Asia hospital](query_slot)
-- [Book appointments in Vikram hospital](query_slot)
-- [Book appointments in fortis hospital](query_slot)
-- [Book appointments with a pediatrican in fortis hospital](query_slot)
-- [Book appointments with a neurosurgeon in vikram hospital](query_slot)
-- [Cardiologists avaliable in fortis hospital](query_slot)
-- [Neurosurgeons in vikram hospital](query_slot)
-- [Book appointments with a Dr.Chandramouli neurosurgeon](query_slot)
-- [Book appointments with a Dr.Vani Murali](query_slot)
-- [Get medicines for cheap](query_slot)
-
-## intent:recipe_ask
-- Could you show some recipes?
-- show some recipes
-- show me some healthy recipes
-- Tell me any good recipes
-- can you show some recipes?
-
-
-## intent:main_ing
-- [egg](ing)
-- [chicken](ing)
-- [potato](ing)
-- [rice](ing)
-- [paneer](ing)
-- [pulav](ing)
-- [biryani](ing)
-- [cauliflower](ing)
-- [samosa](ing)
-- [fried rice](ing)
-- [noodles](ing)
-
-
 ## intent:calorie_intent
 - this is calorie intent 
 - calorie intent 
@@ -125,11 +130,6 @@
 - this is food_pref_intent
 - food_pref_intent
 
-## intent:ask_news
-- latest news on corona virus
-- updates on corona virus
-- corona updates
-
 
 ## intent:ask_sms
 - can u send the sms
@@ -138,6 +138,7 @@
 
 ## intent:ask_map
 - show [hospitals](location_type) near me
+- show [hospitals](location_type) near by
 - display [hospitals](location_type) near me
 - [hospitals](location_type) near me
 - [hospitals](location_type) nearby
@@ -224,7 +225,7 @@
 - See you
 - goodnight
 - i'm off
-- see you later zara
+- see you later max
 - nothing for now
 
 ## intent:affirm
@@ -249,8 +250,6 @@
 - ok
 - k
 - not a problem
-- Ok
-
 
 ## intent:deny
 - nahi
@@ -285,7 +284,7 @@
 - Tell me remedies for [stress](ask_remedy)
 - Tell me remedies for [stomach pain](ask_remedy)
 - Tell me some home remedies for [poor digestion](ask_remedy)
-- Tell me some home remedies for [diarrhea](ask_remedy)
+- Tell me some home remedies for [diarrhoea](ask_remedy)
 - Tell me some home remedies for [backache](ask_remedy)
 - Tell me some home remedies for [arthritis](ask_remedy)
 - Tell me some home remedies for [sprains](ask_remedy)
@@ -294,14 +293,6 @@
 - Give me remedies for [acne](ask_remedy)
 - Give me remedies for [dandruff](ask_remedy)
 - Give me remedies for [hair loss](ask_remedy)
-- can you tell home remedies for [hair loss](ask_remedy)
-- can you tell some home remedies for [acne](ask_remedy)
-- can you show me some home remedy for [stress](ask_remedy)
-- can you show me some home remedy for [arthritis](ask_remedy)
-- Any remedy for [stress](ask_remedy)
-- Please can you tell some remedy for [sunburns](ask_remedy)
-- tell some remedy for [stress](ask_remedy)
-- Tell me some home remedies for [fever](ask_remedy)
 
 
 ## intent:neg
@@ -501,18 +492,24 @@
 - are you sure now
 - are you sure tonight
 
+## intent:reminder_intent
+- Please remind me after 1 min
+- Can you remind me after 1 min?
+- I want you to remind me after 1 min
+- remind me after 1 min
 
 ## intent:medicine_remind
-- Please remind me to take [disprin](medicine:disprin) at (time:entity_extractor)6pm?
-- Can you remind me to take [crocin](medicine:crocin) at (time:entity_extractor)6pm?
+- Please remind me to take [disprin](medicine) at (time:entity_extractor)6pm?
+- Can you remind me to take [crocin](medicine) at (time:entity_extractor)6pm?
 - I want you to remind me to take medicine at (time:entity_extractor)6pm.
 - can you remind me to take medicine [at 15:59](time:2020-01-30T15:59:00.000+00:00)?
 - remind me to take medicine [at 11:45](time:2020-02-03T11:45:00.000+00:00)
-- I need you to remind me to take [lora](medicine:lora) [at 11:45](time:2020-02-03T11:45:00.000+00:00)
-- remind me to take [dcold](medicine:dcold) [at 15:59](time:2020-01-30T15:59:00.000+00:00)
-- I need to take [panadol](medicine:panadol) [at 15:59](time:2020-01-30T15:59:00.000+00:00)
-- I have to take [panadol](medicine:panadol) [at 15:59](time:2020-01-30T15:59:00.000+00:00). can you remind me?
-- Please remind me to take [disprin](medicine:disprin) [at 15:59](time:2020-01-30T15:59:00.000+00:00)
+- I need you to remind me to take [lora](medicine) [at 11:45](time:2020-02-03T11:45:00.000+00:00)
+- remind me to take [dcold](medicine)[at 15:59](time:2020-01-30T15:59:00.000+00:00)
+- I need to take [panadol](medicine)[at 15:59](time:2020-01-30T15:59:00.000+00:00)
+- I have to take [panadol](medicine)[at 15:59](time:2020-01-30T15:59:00.000+00:00). can you remind me?
+- Please remind me to take [disprin](medicine)[at 15:59](time:2020-01-30T15:59:00.000+00:00)
+
 
 
 
@@ -849,11 +846,8 @@
 ## intent:inform_location
 - I am looking for hospitals near me
 - Find hospitals near me
-- Zara,I am looking for hospitals
+- Max,I am looking for hospitals
 - I need to go to the hospital
-
-
-
 
 
 ## intent:name-intent
@@ -926,22 +920,5 @@
 - Can you personalize my health care sevices?
 - Could you personalize my health care routine?
 
-
-
-## intent:reminder_general
-- I have an appointment with a doctor.Can you add it in the reminder list?
-- I need to go for workouts at 8.please can you add it as a reminder? 
-- Add my task of meeting the physiotherapist in my reminder list.
-- I have to go to the gym @ 6pm today. Add it in my reminder.
-- Please can you add my reminder of my today's appointment with the doctor?
-- Add my reminder of meeting the physiotherapist today.
-
-
-## intent:reminder_show
-- can you show my reminder list?
-- what are my reminders that i set for today?
-- What all tasks did I ask you to remind me today?
-- show my reminder list.
-- show my tasks for today?
 
 

@@ -1,9 +1,8 @@
-## greet
+## greeting path 1
 * greet
     - utter_greet
     - utter_ask_info
 
-## info taking form
 * personalize_healthcare   
     - utter_ready
 * pos
@@ -11,16 +10,37 @@
     - form{"name": "information_form"}    
     - form{"name": null}
 
+
+## greeting path 1
+* greet
+    - utter_greet
+    - utter_ask_info
+
 * personalize_healthcare   
-   - utter_ready
+    - utter_ready
 * neg
-    - utter_thank1
-	
+    - utter_np
 
 
+
+## guideline path
+* guidelines
+- action_guidelines
 ## news_path
 * ask_news
 - action_news
+
+## reminder_path
+* reminder_general
+    - action_reset_all_slots
+    - reminder_form
+    - form{"name": "reminder_form"}
+    - action_add_Reminder   
+
+## reminder_path2 
+* reminder_show
+   - action_show_Reminder
+
 
 
 ## exr_path_h1
@@ -964,6 +984,9 @@
 
 
 
+## mail
+* send_mail
+- action_mail
 
 ## graph path
 * graph_ask
@@ -989,20 +1012,6 @@
     - form{"name": "recipe_form"}
     - action_recipe    
     - form{"name": null}
-
-## reminder_path
-* reminder_general
-    - action_reset_all_slots
-    - reminder_form
-    - form{"name": "reminder_form"}
-    - action_add_Reminder   
-    - form{"name": null}
-
-
-* reminder_show
-   - action_show_Reminder
-
-
 <!--
 ## recipe_path
 * recipe_ask
@@ -1089,6 +1098,12 @@
 - utter_default
 
 
+## reminder-event
+* reminder-intent
+    - action_Set_Reminder
+    - action_Get_Reminder
+
+
 ## New Story
 
 
@@ -1099,6 +1114,8 @@
 
 ## reminder_story
 
+* reminder_intent
+    - action_Set_Reminder
 <!--* undefined-->
 <!--  - action_Get_Reminder-->
 
@@ -1137,6 +1154,10 @@
     - action_split_date_time
 <!--* undefined-->
 <!--  - action_Get_Reminder-->
+
+## loc story1
+* ask_location
+    - action_loc_csv
 
 
 
@@ -1190,6 +1211,3 @@
 * remedy{"ask_remedy": "dizziness"}
     - slot{"ask_remedy": "dizziness"}
     - action_remedy_csv
-
-
-
