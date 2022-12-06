@@ -125,7 +125,7 @@ class ActionExrY(Action):
 		return 'action_exr_y'
 	def run(self,dispatcher,tracker,domain):
 		print("Before")
-		data=pd.read_csv("Yoga.csv",engine="python")		
+		data=pd.read_csv("Yoga.csv",engine="python",encoding="cp1252")		
 		df=pd.DataFrame(data)
 		ex_name=tracker.get_slot('ex_type_slot_y')
 		print("slot",ex_name)
